@@ -7,8 +7,8 @@ afterEach( cleanup );
 
 describe( 'App Component', () => {
   it( 'renders a PokeList component', () => {
-    const { getByTitle } = render( <App /> );
-    const list = getByTitle( 'PokeList' );
+    const { queryByTitle } = render( <App /> );
+    const list = queryByTitle( 'PokeList' );
     expect( list ).toBeInTheDocument();
   } );
 } );
