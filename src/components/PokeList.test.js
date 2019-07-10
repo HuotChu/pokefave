@@ -6,7 +6,9 @@ import PokeList from './PokeList';
 afterEach( cleanup );
 
 describe( 'PokeList Component', () => {
-  it( 'passes a test', () => {
-    //...
+  it( 'renders a PokeCard component', () => {
+    const { getByTitle } = render( <PokeList /> );
+    const card = getByTitle( 'PokeCard' );
+    expect( card ).toBeInTheDocument();
   } );
 } );
