@@ -3,6 +3,7 @@ import React, { PureComponent } from 'react';
 import pokeAPI from '../api/pokeAPI';
 import Pokemon from '../store/Pokemon';
 import ListContext from '../contexts/list-context';
+import Header from './Header';
 import PokeList from './PokeList';
 
 class App extends PureComponent {
@@ -27,6 +28,7 @@ class App extends PureComponent {
     return (
       <div className='ui container' style={{ marginTop: '10px' }}>
         <ListContext.Provider value={state}>
+          <Header />
           <PokeList />
         </ListContext.Provider>
       </div>

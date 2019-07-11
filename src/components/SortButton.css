@@ -1,0 +1,9 @@
+.ui.inverted.button.active, .ui.inverted.button:focus {
+  background: transparent none;
+  color: #fff;
+}
+
+.ui.inverted.button:hover {
+  background: #fff;
+  color: rgba(0,0,0,.8);
+}
