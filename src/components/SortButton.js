@@ -10,7 +10,7 @@ class SortButton extends PureComponent {
     super( props );
     this.sortList = () => {
       const sort = this.state.sort === 'default' ? 'alpha' : 'default';
-      let list = Array.from( Pokemon.data );
+      let list = Pokemon.list();
       const sortedPokemon = sort === 'default' ? list : list.sort(
         ( poke1, poke2 ) => poke1.id > poke2.id ? 1 : poke1.id < poke2.id ? -1 : 0
       );

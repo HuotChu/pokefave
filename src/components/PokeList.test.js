@@ -6,7 +6,7 @@ import PokeList from './PokeList';
 
 afterEach( cleanup );
 
-const state = {
+const appState = {
   activeList: [
     {
       id: 'Bulbasaur',
@@ -24,7 +24,7 @@ const state = {
 describe( 'PokeList Component', () => {
   it( 'renders a list of PokeCard components', async () => {
     const { queryAllByTitle } = render(
-      <ListContext.Provider value={state}>
+      <ListContext.Provider value={ appState }>
         <PokeList />
       </ListContext.Provider>
     );
