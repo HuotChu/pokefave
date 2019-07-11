@@ -4,6 +4,7 @@ import pokeAPI from '../api/pokeAPI';
 import Pokemon from '../store/Pokemon';
 import ListContext from '../contexts/list-context';
 import Header from './Header';
+import Loader from './Loader';
 import PokeList from './PokeList';
 
 class App extends PureComponent {
@@ -29,7 +30,7 @@ class App extends PureComponent {
       <div className='ui container' style={{ marginTop: '10px' }}>
         <ListContext.Provider value={state}>
           <Header />
-          <PokeList />
+          { state.activeList.length ? <PokeList /> : <Loader /> }
         </ListContext.Provider>
       </div>
     );
