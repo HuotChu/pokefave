@@ -31,14 +31,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 * [PokéAPI](https://pokeapi.co/) - The RESTful Pokémon API
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [Create React App](https://github.com/facebook/create-react-app) - Setup a React app with one command
+* [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
 
 
 ## Author
 
 * **Scott Bishop** - *Software Engineer* - [HuotChu](https://github.com/HuotChu)
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
